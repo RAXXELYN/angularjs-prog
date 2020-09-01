@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script data-require="angular.js@*" data-semver="1.3.0" 
+	src="//code.angularjs.org/1.3.0/angular.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  
+</head>
+
+<body ng-app="myApp">
+    <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTiQPRyw-gtLnMO4WvVVK_t_gpX2q3L2SfbWg&usqp=CAU');">
+  <h1>Difference between two numbers</h1>
+  <div ng-controller="MainCtrl">
+  First Number : <input type="text" ng-model="num1">
+  <br/>
+  <br/>
+  Second Number : <input type="text" ng-model="num2">
+  <br/>
+  <br/>
+  <input type="button" ng-click="subtract(num1,num2)" value="SUBTRACT">
+  <br/>
+  <br/>
+  Difference : {{result}}
+  </div>
+  <br/>
+  <img src="https://i.ytimg.com/vi/THYIzpMOV-M/maxresdefault.jpg" alt="subtraction image" width="400" height="400" class="centre">
+
+</body>
+
+</html>
+
